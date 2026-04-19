@@ -1,0 +1,111 @@
+.hero-section {
+  min-height: 90vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+
+.hero-title span {
+  background: var(--grad-violet-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-primary-violet {
+  color: var(--primary-violet);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+.btn-primary-custom {
+  background: var(--grad-violet-blue) !important;
+  border: none !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4) !important;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.6) !important;
+}
+
+.btn-outline-custom {
+  background: transparent !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-main) !important;
+  padding: 0.8rem 2rem !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(5px);
+}
+
+.btn-outline-custom:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--primary-violet) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* Image styling & Glow */
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, rgba(2, 132, 199, 0) 70%);
+  filter: blur(50px);
+  z-index: -1;
+  animation: pulseGlow 4s infinite alternate;
+}
+
+.hero-img {
+  border-radius: 30px;
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  animation: floating 6s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+  0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,27 @@
+.footer-section {
+  position: relative;
+  z-index: 10;
+}
+
+.footer-divider {
+  width: 100px;
+  height: 2px;
+  background: var(--grad-violet-blue);
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.footer-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-text strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.footer-text span {
+  font-size: 1.1rem;
+}

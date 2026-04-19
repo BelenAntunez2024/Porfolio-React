@@ -1,0 +1,106 @@
+.projects-section {
+  min-height: 100vh;
+  padding-top: 50px !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.section-title span {
+  background: var(--grad-violet-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+.project-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-violet);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--text-main);
+  margin-bottom: 0.5rem !important;
+}
+
+.project-desc {
+  color: var(--text-muted);
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  line-height: 1.6;
+}
+
+.project-footer {
+  margin-top: auto;
+}
+
+.badge-custom {
+  background: rgba(124, 58, 237, 0.1) !important;
+  color: var(--primary-violet) !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  font-size: 0.7rem !important;
+  border: 1px solid rgba(124, 58, 237, 0.2) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  color: var(--secondary-blue);
+  border-color: var(--secondary-blue);
+}
+
+.btn-project-view {
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid var(--glass-border) !important;
+  color: var(--text-main) !important;
+}
+
+.btn-project-view:hover {
+  background: var(--grad-violet-blue) !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}

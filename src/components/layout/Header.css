@@ -1,0 +1,73 @@
+.custom-navbar {
+  border-radius: 20px !important;
+  transition: all 0.3s ease;
+}
+
+.brand-logo {
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  color: var(--text-main) !important;
+}
+
+.brand-logo span {
+  color: var(--primary-violet);
+  margin-left: 2px;
+}
+
+.nav-item-custom {
+  color: var(--text-muted) !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-item-custom:hover, 
+.nav-item-custom.active {
+  color: var(--primary-violet) !important;
+}
+
+.nav-item-custom.active::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 1.2rem;
+  right: 1.2rem;
+  height: 2px;
+  background: var(--primary-violet);
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--primary-violet);
+}
+
+.btn-contact-nav {
+  background: var(--grad-violet-blue);
+  color: white !important;
+  padding: 0.6rem 1.5rem !important;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+  text-align: center;
+}
+
+.btn-contact-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+  color: white !important;
+}
+
+.navbar-toggler-custom {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.navbar-toggler-custom:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
