@@ -14,7 +14,7 @@ const projects = [
     description: "API robusta para la gestión de datos, usuarios e inventarios con seguridad y escalabilidad.",
     tech: ["Node.js", "Express", "PostgreSQL", "JWT"],
     type: "Backend",
-    link: null
+    link: "https://github.com/BelenAntunez2024/Tienda-Back/tree/develop"
   },
   {
     title: "Tienda Online Wisteria",
@@ -22,7 +22,15 @@ const projects = [
     tech: ["TypeScript", "React", "CSS3", "API Rest", "Figma"],
     type: "Frontend",
     link: "https://wisteriafront.onrender.com/"
+  },
+  {
+    title: "PsicoTurnos",
+    description: "Pagina Web para la gestión de turnos de un Psicologo.",
+    tech: ["TypeScript", "React", "CSS3","Figma", "Bootstrap"],
+    type: "Frontend",
+    link: "https://psicoturnos2026.netlify.app/"
   }
+
 ];
 
 const Projects = () => {
